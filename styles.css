@@ -1,0 +1,143 @@
+:root {
+    --bg: #f5f7fb;
+    --surface: #ffffff;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --primary: #0f4c81;
+    --primary-soft: #e8f0f8;
+    --border: #e5e7eb;
+    --shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.65;
+  }
+  
+  .container {
+    width: min(920px, 92%);
+    margin: 0 auto;
+  }
+  
+  .hero {
+    background: linear-gradient(135deg, #0f4c81 0%, #1d6fa5 100%);
+    color: #fff;
+    padding: 72px 0 56px;
+  }
+  
+  .eyebrow {
+    margin: 0 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.75rem;
+    opacity: 0.9;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.15;
+  }
+  
+  .subtitle {
+    margin: 10px 0 0;
+    font-size: 1.1rem;
+    opacity: 0.95;
+  }
+  
+  .intro {
+    margin: 18px 0 0;
+    max-width: 70ch;
+    color: #eef6ff;
+  }
+  
+  .quick-links {
+    margin-top: 26px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  
+  .quick-links a {
+    text-decoration: none;
+    color: #0f4c81;
+    background: #fff;
+    border-radius: 999px;
+    padding: 8px 14px;
+    font-weight: 600;
+    font-size: 0.92rem;
+  }
+  
+  main {
+    padding: 44px 0 56px;
+  }
+  
+  .section {
+    margin-bottom: 36px;
+  }
+  
+  h2 {
+    margin: 0 0 12px;
+    font-size: 1.35rem;
+  }
+  
+  .skills-list {
+    padding-left: 18px;
+    margin: 0;
+    color: var(--muted);
+  }
+  
+  .project-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+    box-shadow: var(--shadow);
+  }
+  
+  .project-card h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  
+  .project-card p {
+    margin: 0 0 10px;
+  }
+  
+  .project-links a {
+    margin-right: 14px;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .project-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer {
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.92rem;
+    padding: 18px 0 30px;
+    background: var(--surface);
+  }
+  
+  @media (max-width: 640px) {
+    .hero {
+      padding: 56px 0 42px;
+    }
+  
+    .quick-links a {
+      padding: 7px 12px;
+      font-size: 0.88rem;
+    }
+  }

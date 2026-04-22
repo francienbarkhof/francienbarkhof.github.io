@@ -1,82 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Francien Barkhof | Portfolio</title>
-  <meta name="description" content="Portfolio and project overview of Francien Barkhof." />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Portfolio of Francien Barkhof.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
-  <header class="hero">
-    <div class="container">
-      <p class="eyebrow">Portfolio</p>
-      <h1>Francien Barkhof</h1>
-      <p class="subtitle">Data Scientist / Researcher / Developer</p>
-      <p class="intro">
-        I build data-driven solutions and research-focused software. I enjoy turning
-        complex problems into clear, practical outcomes.
-      </p>
+  <main class="page">
+    <h1 aria-label="Francien Barkhof">
+      <span class="name-marquee-track">
+        <span class="name-marquee-item">FRANCIEN BARKHOF</span>
+        <span class="name-marquee-item" aria-hidden="true">FRANCIEN BARKHOF</span>
+      </span>
+    </h1>
 
-      <nav class="quick-links" aria-label="Social links">
-        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://scholar.google.com/yourprofile" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="cv.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
-      </nav>
+    <nav class="button-row" aria-label="External links">
+      <a href="https://www.linkedin.com/in/francien-barkhof-512393227/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:fj.barkhof@hotmail.com">Email</a>
+      <a href="https://github.com/francienbarkhof" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://scholar.google.com/citations?user=m8vFW2wAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+    </nav>
+
+    <div class="hero-image-row">
+      <img src="images/7x7kernel.png" alt="7x7 kernel visualization">
+      <p class="last-updated">Last updated: <time datetime="2026-04-22">April, 2026</time></p>
     </div>
-  </header>
 
-  <main class="container">
-    <section id="about" class="section">
+
+
+
+    <section class="section">
       <h2>About Me</h2>
-      <p>
-        Write 3-4 sentences here: your focus area, technical strengths, and what kind of
-        roles or collaborations you are looking for.
-      </p>
+      <p>I am a graduate of the MSc Artificial Intelligence program at the University of Amsterdam. My research interests are in the field of natural language processing, computer vision, and quantum computing. </p>
+      <p>I recently completed my thesis, where I worked on neural quantum state tomography, exploring how Transformers and State Space Models can be used to reconstruct quantum states from measurement data (classical shadows). </p>
+      <p>Right now, I am working as an AI Engineer at WSK Medical, focusing on computer vision projects in the medical domain.</p>
     </section>
 
-    <section id="skills" class="section">
-      <h2>Core Skills</h2>
-      <ul class="skills-list">
-        <li>Python, SQL, R</li>
-        <li>Machine Learning & Statistics</li>
-        <li>Data Visualization (Plotly, Tableau)</li>
-        <li>Research Communication</li>
-      </ul>
-    </section>
+    <section class="section">
+      <h2>Projects</h2>
 
-    <section id="projects" class="section">
-      <h2>Selected Projects</h2>
+      <article class="project">
+        <h3>Structured Neural Shadow Quantum State Tomography</h3>
 
-      <article class="project-card">
-        <h3>Project Title 1</h3>
-        <p>
-          One-sentence context + what you built + measurable result.
-          Example: “Built a prediction model reducing manual review time by 30%.”
-        </p>
-        <p class="project-links">
-          <a href="https://github.com/yourusername/project1" target="_blank" rel="noopener noreferrer">Code</a>
-          <a href="#" target="_blank" rel="noopener noreferrer">Demo / Paper</a>
+        <div class="project-grid">
+          <div class="project-details">
+            <p class="authors">
+              Francien Barkhof<br>
+              Supervisor: E. Egorov, Examiner: Dr. E. Gavves
+            </p>
+            <p class="project-meta">Master's thesis, University of Amsterdam, 2026</p>
+
+            <p class="project-links">
+              Links:
+              <a href="https://github.com/francienbarkhof/Structured_NSQST" target="_blank" rel="noopener noreferrer">Code</a>
+            </p>
+
+          </div>
+
+          <figure class="project-figure">
+            <img src="images/circuit.png" alt="NSQST circuit diagram">
+          </figure>
+        </div>
+
+        <p class="project-description">
+          This work focused on neural quantum state tomography, where machine
+          learning models are used to reconstruct quantum states from
+          measurement data. We researched how the structure of the quantum
+          state can be incorporated into the architecture of neural models
+          representing the quantum state, and into the measurement setting, to
+          improve data efficiency.
         </p>
       </article>
 
-      <article class="project-card">
-        <h3>Project Title 2</h3>
-        <p>
-          Keep this concise and impact-oriented: challenge, your contribution, and outcome.
+      <article class="project">
+        <h3>Reproducing NevIR: Negation in neural information retrieval</h3>
+
+        <div class="project-grid">
+          <div class="project-details">
+            <p class="authors">
+              Coen van den Elsen*, Francien Barkhof*, Thijmen Nijdam*, Simon
+              Lupart, Mohammad Aliannejadi
+            </p>
+            <p class="project-meta">Proceedings of the 48th International ACM SIGIR Conference on
+              Research and Development in Information Retrieval, 2025 </p>
+
+            <p class="project-links">
+              Links:
+              <a class="accent-blue-link" href="https://github.com/thijmennijdam/NevIR-reproducibility" target="_blank" rel="noopener noreferrer">Code</a> |
+              <a class="accent-blue-link" href="https://dl.acm.org/doi/pdf/10.1145/3726302.3730294" target="_blank" rel="noopener noreferrer">Paper</a> |
+              <a class="accent-blue-link" href="https://thijmennijdam.github.io/docs/nevir_poster.pdf" target="_blank" rel="noopener noreferrer">Poster</a>
+
+            </p>
+
+          </div>
+
+          <figure class="project-figure">
+            <img src="images/nevir.png" alt="Negation project visual">
+          </figure>
+        </div>
+
+        <p class="project-description">
+          In this paper, we reproduced and extended the findings of "NevIR:
+          Negation in Neural Information Retrieval". We evaluated the
+          performance of SotA neural IR models with the NevIR benchmark to
+          assess their ability to handle negation, and finetuned IR models on
+          another negation dataset to evaluate how well this understanding of
+          negation generalizes.
         </p>
-        <p class="project-links">
-          <a href="https://github.com/yourusername/project2" target="_blank" rel="noopener noreferrer">Code</a>
+      </article>
+
+      <article class="project">
+        <h3>Deep learning based tumor detection and segmentation for automated 3D breast ultrasound imaging</h3>
+
+        <div class="project-grid">
+          <div class="project-details">
+            <p class="authors">
+              Francien Barkhof, Silvia Abbring, Rohit Pardasani, Navchetan Awasthi
+            </p>
+            <p class="project-meta">IEEE South Asian Ultrasonics Symposium (SAUS), 2024</p>
+
+            <p class="project-links">
+              Links:
+              <a href="https://ieeexplore.ieee.org/abstract/document/10563487" target="_blank" rel="noopener noreferrer">Paper</a> 
+            </p>
+
+          </div>
+          <figure class="project-figure">
+            <img src="images/abus.png" alt="ABUS project visual">
+          </figure>
+        </div>
+
+        <p class="project-description">
+          This work focused on automating the detection and segmentation of
+          breast tumors in ABUS images. To this end, we trained U-Net and YOLO
+          models, along with pre-processing and post-processing steps, to
+          improve performance.
         </p>
       </article>
     </section>
   </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>© 2026 Francien Barkhof · Built with GitHub Pages</p>
-    </div>
-  </footer>
 </body>
-</html>
